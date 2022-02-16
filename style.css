@@ -1,0 +1,55 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #1c1c1b;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#apple
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 7rem;
+    color: #fff;
+    background-color: #1c1c1b;
+    box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.5),
+    15px 25px 10px rgba(0, 0, 0, 0.5),
+    15px 20px 20px rgba(0, 0, 0, 0.5);
+    padding: 18px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-shadow: 0 0 50px #a200ff,
+    0 0 100px #a200ff,
+    0 0 150px #a200ff,
+    0 0 200px #a200ff;
+    animation: Hue 2s linear infinite alternate;
+}
+
+/* Let's Add Animation */
+
+@keyframes Hue {
+
+    from
+    {
+        filter: hue-rotate(0deg);
+    }
+
+    to
+    {
+        filter: hue-rotate(270deg);
+    }
+    
+}
